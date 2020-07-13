@@ -86,14 +86,16 @@ Para nuestro primer ejercicio, vamos a ejecutar algunos comandos ad-hoc para ayu
 
 #### Configurar dependencias:
 
-Define tu inventario. Los inventarios son cruciales para Ansible, ya que definen máquinas remotas en las que ejecutará comandos o sus Playbooks. Use `vi` o `vim` para crear un archivo llamado  `hosts`. Luego, agregue las definiciones apropiadas para el nodo que funcionará como un nodo web.
+Define tu inventario. Los inventarios son cruciales para Ansible, ya que definen máquinas remotas en las que ejecutará comandos o sus Playbooks. Use `vi` o `vim` para crear un archivo llamado  `inventory`. Luego, agregue las definiciones apropiadas para el nodo que funcionará como un nodo web.
 
-*hosts (ejemplo)*
+*inventory (ejemplo)*
 
 ```ini
 [web]
-node1.example.com
+{node ip}
 ```
+
+Donde `node ip` corresponde a la IP que vamos a usar como nodo controlado.
 
 #### Paso 1: prueba la respuesta de webhost
 
